@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorBackground">
+
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <com.mapbox.mapboxsdk.maps.MapView
+                android:id="@+id/mapView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                mapbox:mapbox_cameraTargetLat="13.032980"
+                mapbox:mapbox_cameraTargetLng="77.592583"
+                mapbox:mapbox_cameraZoom="14"></com.mapbox.mapboxsdk.maps.MapView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/button"
+                    style="@android:style/Widget.Button.Toggle"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/grayTranslucent"
+                    android:gravity="center"
+                    android:text="START TRIP"
+                    android:textAppearance="@android:style/TextAppearance.Holo.Inverse"
+                    android:textColor="@color/textWhite"
+                    android:textOff="Start Trip"
+                    android:textOn="Stop Trip" />
+
+                <Button
+                    android:id="@+id/show_potholes"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/grayTranslucent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="Show Potholes"
+                    android:textAppearance="@android:style/TextAppearance"
+                    android:textColor="@color/textWhite" />
+
+                <Button
+                    android:id="@+id/showallpotholes"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/grayTranslucent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="Show Global Potholes"
+                    android:textAppearance="@android:style/TextAppearance"
+                    android:textColor="@color/textWhite" />
+
+
+                <Button
+                    android:id="@+id/sync"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.5"
+                    android:background="@color/grayTranslucent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="Sync"
+                    android:textAppearance="@android:style/TextAppearance"
+                    android:textColor="@color/textWhite" />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textView"
+                android:textColor="@color/textWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="current location"/>
+            <TextView
+                android:id="@+id/acc"
+                android:textColor="@color/textWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

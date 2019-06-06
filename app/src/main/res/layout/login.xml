@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_margin="13dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:textColor="@color/textWhite"/>
+
+        <EditText
+            android:id="@+id/uname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textWhite"
+            android:hint="Username" />
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textWhite"
+            android:hint="Password"
+            android:inputType="textPassword"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/login"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="LOGIN"
+                android:background="@color/grayTranslucent"
+                android:textColor="@color/textWhite"
+                android:layout_margin="10dp"/>
+            <Button
+                android:id="@+id/register_page"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Register"
+                android:background="@color/grayTranslucent"
+                android:textColor="@color/textWhite"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/incorrect_uname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:textColor="@color/colorAccent"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="" />
+        <TextView
+            android:id="@+id/request_processing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/textWhite"
+            android:gravity="center"
+            android:textSize="20dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

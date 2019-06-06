@@ -1,0 +1,5 @@
+<root>
+    <item name='com.mapbox.android.core.location.LocationEngineProvider'>
+        <annotation name='java.lang.Deprecated' />
+    </item>
+</root>
