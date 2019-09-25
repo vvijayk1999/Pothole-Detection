@@ -9,11 +9,11 @@ smartphone device.
 # How to use
 
 You will be prompted to login to a registered account during the first launch. If you happen to have already registered an account you can proceed by typing in the username and password respectively.
-![alt text](https://raw.githubusercontent.com/vvijayk1999/Pothole-Detection/master/Screenshots/login.jpg)
+<img src="Screenshots/login.jpg" width="500" alt="accessibility text"><br>
 If you haven't registered it yet, tap the 'Register' button, you will be shown a screen to create your account.
-![alt text](https://raw.githubusercontent.com/vvijayk1999/Pothole-Detection/master/Screenshots/register.jpg)
+<img src="Screenshots/register.jpg" width="500" alt="accessibility text"><br>
 hurray!!, now that you have created an account and logged in, your screen might look something like this.
-![alt text](https://raw.githubusercontent.com/vvijayk1999/Pothole-Detection/master/Screenshots/main.jpg)
+<img src="Screenshots/main.jpg" width="500" alt="accessibility text"><br>
 
 Step 1:
 Tap on the 'Start Trip' button (your button will turn green) and you are all set to begin your journey to discover pothole.
